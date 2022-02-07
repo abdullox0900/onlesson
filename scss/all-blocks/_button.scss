@@ -1,0 +1,26 @@
+.button {
+     display: inline-block;
+     padding: 10px 24px;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 24px;
+     letter-spacing: -0.011em;
+     color: #ffffff;
+     border: 2px solid transparent;
+     text-decoration: none;
+     background: #fb6d3a;
+     border-radius: 12px;
+     transition: all 0.5s ease;
+}
+
+.button:hover {
+     color: #fb6d3a;
+     border: 2px solid #fb6d3a;
+     background-color: transparent;
+}
+
+.button:active {
+     color: #fff;
+     border: 2px solid transparent;
+     background-color: #fb6d3a;
+}

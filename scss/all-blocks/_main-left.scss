@@ -1,0 +1,96 @@
+.main-left {
+     max-width: 236px;
+     padding-top: 64px;
+
+     .main-left__logo-link {
+          display: inline-block;
+          margin-bottom: 90px;
+     }
+
+     .main-left__logo-img {
+          width: 228px;
+          height: 44px;
+     }
+
+     .user {
+          display: flex;
+          align-items: center;
+          margin-bottom: 46px;
+     }
+
+     .user__avatar {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 42px;
+          height: 42px;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 27px;
+          color: #ffffff;
+          background: #132651;
+          border-radius: 16px;
+     }
+
+     .user__title {
+          margin-left: 24px;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 36px;
+          color: #333333;
+     }
+
+     .main-left__nav {
+          margin-bottom: 64px;
+     }
+
+     .main-left__list {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+     }
+
+     .main-left__item + .main-left__item {
+          margin-top: 33px;
+     }
+
+     .main-left__link {
+          display: inline-block;
+          position: relative;
+          padding-left: 48px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 27px;
+          color: #333333;
+          text-decoration: none;
+     }
+
+     // .main-left__link:active {
+     //      background: #e1e1e1;
+     //      box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.02);
+     // }
+
+     .main-left__item .main-left__link::before {
+          position: absolute;
+          left: 0px;
+          content: '';
+          width: 24px;
+          height: 24px;
+     }
+
+     .main-left__item:nth-child(1) .main-left__link::before {
+          background-image: url('../../img/Home.svg');
+     }
+
+     .main-left__item:nth-child(2) .main-left__link::before {
+          background-image: url('../../img/book-saved.svg');
+     }
+
+     .main-left__item:nth-child(3) .main-left__link::before {
+          background-image: url('../../img/Info-Circle.svg');
+     }
+
+     .main-left__item:nth-child(4) .main-left__link::before {
+          background-image: url('../../img/call.svg');
+     }
+}
