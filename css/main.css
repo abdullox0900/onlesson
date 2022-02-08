@@ -976,6 +976,10 @@ img {
   line-height: 24px;
 }
 
+.contacts-right .contacts__address:hover {
+  color: #fff;
+}
+
 .contacts-right .contacts__address::before {
   position: absolute;
   left: 32px;
@@ -1003,6 +1007,10 @@ img {
   padding: 12px 21px 12px 52px;
 }
 
+.contacts-right .btn-link__email:hover {
+  color: #fff;
+}
+
 .contacts-right .btn-link__email::before {
   position: absolute;
   left: 23px;
@@ -1016,6 +1024,10 @@ img {
   display: inline-block;
   position: relative;
   padding: 12px 17px 12px 50px;
+}
+
+.contacts-right .btn-link__number:hover {
+  color: #fff;
 }
 
 .contacts-right .btn-link__number::before {

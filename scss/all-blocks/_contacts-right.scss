@@ -77,6 +77,10 @@
           line-height: 24px;
      }
 
+     .contacts__address:hover {
+          color: #fff;
+     }
+
      .contacts__address::before {
           position: absolute;
           left: 32px;
@@ -98,6 +102,10 @@
           padding: 12px 21px 12px 52px;
      }
 
+     .btn-link__email:hover {
+          color: #fff;
+     }
+
      .btn-link__email::before {
           position: absolute;
           left: 23px;
@@ -111,6 +119,10 @@
           display: inline-block;
           position: relative;
           padding: 12px 17px 12px 50px;
+     }
+
+     .btn-link__number:hover {
+          color: #fff;
      }
 
      .btn-link__number::before {
