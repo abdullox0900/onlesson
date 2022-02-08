@@ -1,0 +1,50 @@
+// ==========FORM==========
+.form {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     position: relative;
+     padding-bottom: 64px;
+
+     .form__btn {
+          position: absolute;
+          top: 17px;
+          left: 24px;
+          width: 24px;
+          height: 24px;
+          border: none;
+          background-color: transparent;
+          background-image: url('../../img/search-normal.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+     }
+
+     .form__input {
+          width: 609px;
+          padding: 18px 72px;
+          outline: none;
+          border: none;
+          border-radius: 12px;
+          background: #f6f6f5;
+     }
+
+     .form__input-contact {
+          width: 671px;
+     }
+
+     .form__input::placeholder {
+          font-size: 16px;
+          line-height: 24px;
+          color: #b3b6b6;
+     }
+
+     .form__link {
+          margin-right: 30px;
+     }
+
+     .form__select {
+          outline: none;
+          border: none;
+          background-color: transparent;
+     }
+}

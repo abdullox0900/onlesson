@@ -1,120 +1,59 @@
 .main-right {
      width: 926px;
-     padding: 64px 30px 30px 30px;
+     height: 1000px;
+     padding: 64px 30px 0px 30px;
      margin-top: 24px;
      background: #e1e1e1;
      box-shadow: 0px 2.46063px 29.5276px rgba(0, 0, 0, 0.02);
-     border-radius: 48px 48px 0px 0px;
-
-     // ==========FORM==========
-     .form {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          position: relative;
-          padding-bottom: 64px;
-     }
-
-     .form__btn {
-          position: absolute;
-          top: 17px;
-          left: 24px;
-          width: 24px;
-          height: 24px;
-          border: none;
-          background-color: transparent;
-          background-image: url('../../img/search-normal.svg');
-          background-repeat: no-repeat;
-          background-size: contain;
-     }
-
-     .form__input {
-          width: 609px;
-          padding: 18px 72px;
-          outline: none;
-          border: none;
-          border-radius: 12px;
-          background: #f6f6f5;
-     }
-
-     .form__input::placeholder {
-          font-size: 16px;
-          line-height: 24px;
-          color: #b3b6b6;
-     }
-
-     .form__link {
-          margin-right: 30px;
-     }
-
-     .form__select {
-          outline: none;
-          border: none;
-          background-color: transparent;
-     }
-
-     // ==========MAIN-RIGHT__BOX==========
-     .main-right__box {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          margin-bottom: 40px;
-     }
-
-     .main-right__header {
-          font-weight: 500;
-          font-size: 26px;
-          line-height: 39px;
-          color: #333333;
-     }
-
-     .main-right__menu-oval {
-          display: flex;
-          position: relative;
-          width: 5px;
-          height: 5px;
-          border-radius: 50%;
-          background: #333333;
-     }
-
-     .main-right__menu-oval::before {
-          position: absolute;
-          right: 10px;
-          content: '';
-          width: 5px;
-          height: 5px;
-          border-radius: 50%;
-          background: #333333;
-     }
-
-     .main-right__menu-oval::after {
-          position: absolute;
-          right: 20px;
-          content: '';
-          width: 5px;
-          height: 5px;
-          border-radius: 50%;
-          background: #333333;
-     }
+     border-radius: 48px;
 
      // ==========MAIN-RIGHT__LIST==========
 
      .main-right__list {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 40px;
+          grid-row-gap: 40px;
+          height: 690px;
+          overflow: auto;
+          border-radius: 48px 48px;
           margin: 0;
           padding: 0;
           list-style: none;
      }
 
+     .main-right__list::-webkit-scrollbar {
+          width: 0;
+     }
+
+     .main-right__list {
+          -ms-overflow-style: none;
+     }
+
+     .main-right__list {
+          overflow: -moz-scrollbars-none;
+     }
+
      .main-right__item {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
           max-width: 410px;
           min-height: 374px;
-          padding: 27px 33px 35px 24px;
+          padding: 27px 24px 35px 24px;
           border-radius: 48px;
           background: rgba(0, 0, 0, 0.3);
           background-image: url('../../img/play-circle.svg');
           background-repeat: no-repeat;
           background-size: 66px;
           background-position: center center;
+          cursor: pointer;
+          transition: 0.5s ease;
+     }
+
+     .main-right__item:hover {
+          background-color: #6f6f6f;
      }
 
      .item-card__top {
@@ -152,5 +91,17 @@
           color: #fff;
           border-radius: 10px;
           background: #fb6d3a;
+     }
+
+     .item-card__footer {
+          width: 342px;
+          padding: 18px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #ffffff;
+          background: rgba(255, 255, 255, 0.3);
+          backdrop-filter: blur(33.4957px);
+          border-radius: 24px;
      }
 }

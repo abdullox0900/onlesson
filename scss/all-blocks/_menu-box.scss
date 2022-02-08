@@ -1,0 +1,42 @@
+.menu-box {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 40px;
+
+     .menu-box__header {
+          font-weight: 500;
+          font-size: 26px;
+          line-height: 39px;
+          color: #333333;
+     }
+
+     .menu-box__oval {
+          display: flex;
+          position: relative;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background: #333333;
+     }
+
+     .menu-box__oval::before {
+          position: absolute;
+          right: 10px;
+          content: '';
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background: #333333;
+     }
+
+     .menu-box__oval::after {
+          position: absolute;
+          right: 20px;
+          content: '';
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background: #333333;
+     }
+}
